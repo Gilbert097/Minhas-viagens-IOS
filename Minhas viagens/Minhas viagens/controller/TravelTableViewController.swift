@@ -8,38 +8,46 @@
 import UIKit
 
 class TravelTableViewController: UITableViewController {
+    private var travels: [Travel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        addTravels()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    private func addTravels(){
+        travels.append(Travel(title: "Sociedade Esportiva"))
+        travels.append(Travel(title: "Apple Inc."))
+        travels.append(Travel(title: "Eiffel Tower"))
+        travels.append(Travel(title: "Colosseum"))
+    }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+    override func numberOfSections(in tableView: UITableView) -> Int { 1 }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { travels.count }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let currentTravel = travels[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "travelCell", for: indexPath)
+        cell.textLabel?.text = currentTravel.title
+        
+        //Ocultando linha de separação dos items
+        //cell.separatorInset = UIEdgeInsets(top: CGFloat(0), left: cell.bounds.size.width, bottom: CGFloat(0), right: CGFloat(0));
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            tableView.deselectRow(at: indexPath, animated: true)
+    }
 
     /*
     // Override to support conditional editing of the table view.
