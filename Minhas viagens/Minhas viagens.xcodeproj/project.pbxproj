@@ -14,6 +14,7 @@
 		D447003225DAE88B00168A9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D447003125DAE88B00168A9D /* Assets.xcassets */; };
 		D447003525DAE88B00168A9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D447003325DAE88B00168A9D /* LaunchScreen.storyboard */; };
 		D4E17D4725DAF060009E253E /* TravelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E17D4625DAF060009E253E /* TravelTableViewController.swift */; };
+		D4E17D4B25DAF3C4009E253E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E17D4A25DAF3C4009E253E /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D447003425DAE88B00168A9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D447003625DAE88B00168A9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4E17D4625DAF060009E253E /* TravelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTableViewController.swift; sourceTree = "<group>"; };
+		D4E17D4A25DAF3C4009E253E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4E17D4B25DAF3C4009E253E /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			children = (
 				D447002725DAE88800168A9D /* Minhas viagens */,
 				D447002625DAE88800168A9D /* Products */,
+				D4E17D4925DAF3C4009E253E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +80,14 @@
 				D4E17D4625DAF060009E253E /* TravelTableViewController.swift */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		D4E17D4925DAF3C4009E253E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4E17D4A25DAF3C4009E253E /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
