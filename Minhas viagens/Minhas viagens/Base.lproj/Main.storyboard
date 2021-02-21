@@ -35,7 +35,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="FER-2Q-u20">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" identifier="newTravel" id="C2Q-9V-jZO"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="mapTravel" id="C2Q-9V-jZO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

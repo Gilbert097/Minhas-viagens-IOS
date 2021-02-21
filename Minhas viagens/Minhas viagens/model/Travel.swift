@@ -10,9 +10,11 @@ import Foundation
 class Travel: Codable{
     var id:String
     var title:String
+    var address: Address
     
-    init(title:String){
+    init(address: Address){
         self.id = UUID().uuidString
-        self.title = title
+        self.title = address.name
+        self.address = address
     }
 }

@@ -25,11 +25,11 @@ class TravelRepository{
         return [Travel]()
     }
     
-    func save(task: Travel) -> Bool {
+    func save(travel: Travel) -> Bool {
         do {
-            var tasks = getAll()
-            tasks.append(task)
-            try persistTasks(tasks)
+            var travels = getAll()
+            travels.append(travel)
+            try persistTravels(travels)
         } catch let error {
             print(error.localizedDescription)
             return false
@@ -47,7 +47,7 @@ class TravelRepository{
         if let travelRemove = travelElement {
             do {
                 travels.remove(at: travelRemove.offset)
-                try persistTasks(travels)
+                try persistTravels(travels)
             } catch let error {
                 print(error.localizedDescription)
                 return false
@@ -58,7 +58,7 @@ class TravelRepository{
         return true
     }
     
-    private func persistTasks(_ travels: [Travel]) throws {
+    private func persistTravels(_ travels: [Travel]) throws {
         let encoder = JSONEncoder()
         let travelsEncoded = try encoder.encode(travels)
         UserDefaults.standard.set(travelsEncoded, forKey: TravelParameter.travels.rawValue)

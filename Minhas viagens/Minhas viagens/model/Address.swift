@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Address {
+class Address: Codable {
     var name = ""
     var thoroughfare =  ""
     var subThoroughfare = ""
@@ -17,6 +17,8 @@ class Address {
     var country =  ""
     var administrativeArea =  ""
     var subAdministrativeArea =  ""
+    var latitude: Double
+    var longitude: Double
     
     init(name:String = "",
          thoroughfare:String = "",
@@ -26,7 +28,9 @@ class Address {
          postalCode:String = "",
          country:String = "",
          administrativeArea:String = "",
-         subAdministrativeArea:String = "") {
+         subAdministrativeArea:String = "",
+         latitude: Double,
+         longitude: Double) {
         self.name = name
         self.thoroughfare = thoroughfare
         self.subThoroughfare = subThoroughfare
@@ -36,10 +40,9 @@ class Address {
         self.country = country
         self.administrativeArea = administrativeArea
         self.subAdministrativeArea = subAdministrativeArea
+        self.latitude = latitude
+        self.longitude = longitude
         
-        if name == "\(thoroughfare), \(subThoroughfare)"{
-            self.name = ""
-        }
     }
     
     func getShortAddress() -> String {
@@ -47,7 +50,7 @@ class Address {
     }
     
     func toString()->String{
-            "\n name: \(name)" +
+        "\n name: \(name)" +
             "\n thoroughfare: \(thoroughfare)" +
             "\n subThoroughfare: \(subThoroughfare)" +
             "\n locality: \(locality)" +
@@ -56,5 +59,18 @@ class Address {
             "\n country: \(country)" +
             "\n administrativeArea: \(administrativeArea)" +
             "\n subAdministrativeArea: \(subAdministrativeArea)"
+    }
+    
+    func getDetailPoint() -> (title:String, subtitle:String)
+    {
+        var title = ""
+        var subtitle = ""
+        if(name != "\(thoroughfare), \(subThoroughfare)"){
+            title = name
+            subtitle = getShortAddress()
+        }else{
+            title = getShortAddress()
+        }
+        return (title: title, subtitle: subtitle)
     }
 }
