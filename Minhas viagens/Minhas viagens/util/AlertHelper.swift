@@ -24,7 +24,7 @@ struct AlertHelper {
                                  positiveHandler: ((UIAlertAction) -> Void)? = nil,
                                  negativeHandler: ((UIAlertAction) -> Void)? = nil){
         let alertViewController = UIAlertController(title: "Message", message: message, preferredStyle: .alert)
-        let yesAction = UIAlertAction(title: "Yes", style: .destructive, handler: positiveHandler)
+        let yesAction = UIAlertAction(title: "Yes", style: .default, handler: positiveHandler)
         let noAction = UIAlertAction(title: "No", style: .default, handler: negativeHandler)
         alertViewController.addAction(yesAction)
         alertViewController.addAction(noAction)
