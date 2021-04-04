@@ -14,20 +14,20 @@ No desenvolvimento desse app foi possível aprender:
 
 Tela de apresentação:
 <p align="center">
-  <img src="https://github.com/Gilbert097/Minhas-viagens-IOS/blob/master/splash-screen-app.gif?raw=true" width="350" title="Imagem App">
+  <img src="https://github.com/Gilbert097/Minhas-viagens-IOS/blob/master/splash-screen-app.gif?raw=true" width="350">
 </p>
 
 Criar nova viagem:
 <p align="center">
-  <img src="https://github.com/Gilbert097/Minhas-viagens-IOS/blob/master/create-new-travel.gif?raw=true" width="350" title="Imagem App">
+  <img src="https://github.com/Gilbert097/Minhas-viagens-IOS/blob/master/create-new-travel.gif?raw=true" width="350">
 </p>
 
 Deletar uma viagem:
 <p align="center">
-  <img src="https://github.com/Gilbert097/Minhas-viagens-IOS/blob/master/delete-travel.gif?raw=true" width="350" title="Imagem App">
+  <img src="https://github.com/Gilbert097/Minhas-viagens-IOS/blob/master/delete-travel.gif?raw=true" width="350">
 </p>
 
 Mostrar uma viagem:
 <p align="center">
-  <img src="https://github.com/Gilbert097/Minhas-viagens-IOS/blob/master/show-travel.gif?raw=true" width="350" title="Imagem App">
+  <img src="https://github.com/Gilbert097/Minhas-viagens-IOS/blob/master/show-travel.gif?raw=true" width="350">
 </p>
