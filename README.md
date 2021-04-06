@@ -1,5 +1,5 @@
 # Minhas-viagens-IOS
-Décimo segundo app IOS do curso Desenvolvimento IOS 12 na Udemy, ministrado pelo professor Jamilton Damasceno. Os objetivos do app são, manipular uma lista de viagens e mostrar o local da viagem no mapa.
+12º app IOS do curso Desenvolvimento IOS 12 na Udemy, ministrado pelo professor Jamilton Damasceno. Os objetivos do app são, manipular uma lista de viagens e mostrar o local da viagem no mapa.
 
 No desenvolvimento desse app foi possível aprender:
 - Adicionar e utilizar o framework CoreLocation.
@@ -8,7 +8,7 @@ No desenvolvimento desse app foi possível aprender:
 - Utilizar componente MKMapView.
 - Trabalhar com o gesto de Long Press.
 - Criar uma anotação para um local selecionado.
-- Criar uma tela de apresentação para o app (Splash Screen) 
+- Criar uma tela de apresentação para o app (LaunchScreen) 
 
 <h1>Funções</h1>
 
